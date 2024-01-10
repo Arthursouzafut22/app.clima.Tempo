@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-image: url(./img/5581713.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.previsao-tempo {
+    border-radius: 15px;
+    max-width: 450px;
+    width: 100%;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+}
+
+.img-nuvem {
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.buscar-tempo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 100%;
+    padding: 0.5rem 0.625rem;
+    margin: 17px auto 0px auto;
+}
+
+.buscar-tempo img {
+    max-width: 32px;
+    width: 100%;
+    display: block;
+}
+
+.buscar-tempo button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    max-width: 40px;
+    width: 100%;
+}
+
+.buscar-tempo input {
+    padding: 13px 30px;
+    font-size: 1.25rem;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+input::placeholder {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.conteiner-graus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 60px;
+    height: 160px;
+}
+.graus {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.0625rem;
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+}
+
+.graus-2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size:  4.0625rem;
+    align-self: end;
+}
+
+.nuvens {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-top: 0px;
+}
+.info-tempo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.25rem 0.9375rem 1.25rem;
+}
+
+.info-texto :nth-child(1) {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    margin:0px ;
+}
+
+.info-texto :nth-child(2) {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin:5px 0px 0px 0px ;
+}
+
+.info-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.info-conteiner img {
+    margin-right: 13px;
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .previsao-tempo {
+        max-width: 350px;
+        width: 90%;
+    }
+    .buscar-tempo {
+        max-width: 300px;
+        width: 90%;
+    } 
+    .buscar-tempo :nth-child(1)  {
+        max-width: 25px;
+    }
+    .buscar-tempo input {
+        font-size: 1.125rem;
+    }
+    .info-conteiner img {
+        max-width: 40px;
+    }
+    .velocidade {
+        font-size: 18px !important;
+    }
+}

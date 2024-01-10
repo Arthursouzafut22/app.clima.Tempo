@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt - BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clima Tempo</title>
+  </head>
+  <body>
+    <section class="previsao-tempo">
+      <div class="previsao-conteiner">
+        <div class="buscar-tempo">
+          <img src="img/pin-de-localizacao.png" alt="localizacao" />
+          <input type="text" placeholder="Digite a Cidade" id="buscarCidade" />
+          <button onclick="buscarClima()">
+            <img src="img/pesquisa-de-lupa.png" alt="lupa" />
+          </button>
+        </div>
+        <div>
+          <img
+            class="img-nuvem"
+            src="img/image-removebg-preview (12).png"
+            alt="img"
+          />
+          <div class="conteiner-graus">
+            <p class="graus">16</p>
+            <p class="graus-2">ºC</p>
+          </div>
+          <p class="nuvens">Pressão: <span class="sensacao"></span></p>
+        </div>
+        <div class="info-tempo">
+          <div class="info-conteiner">
+            <img src="img/ondas-de-agua.png" alt="ondas" />
+            <div class="info-texto">
+              <p class="humidade"><span class="humidade-2"></span>%</p>
+              <p>Humidade</p>
+            </div>
+          </div>
+          <div class="info-conteiner">
+            <img src="img/vento.png" alt="vento" />
+            <div class="info-texto">
+              <p class="velocidade">
+                <span class="num-velocidade">0</span>KM/h
+              </p>
+              <p>Velocidade do vento</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
